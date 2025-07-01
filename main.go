@@ -14,7 +14,7 @@ func main() {
 
 	srv := &http.Server{
 		Addr:    ":" + port,
-		Handler: mux,
+		Handler: mux
 	}
 
 	log.Printf("Serving files from %s on port: %s\n", filepathRoot, port)
